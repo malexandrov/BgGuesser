@@ -1,0 +1,157 @@
+﻿html, body, div, span, applet, object, iframe,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+
+html { height: 98% }
+body { height: 100%; text-align: center; background-color: black; }
+
+#wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+#wrapper-guessmap {
+    background-color: black;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border: 2px dashed black;
+    width: 450px;
+    height: 350px;
+    z-index: 1;
+}
+#guessing-map {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 430px;
+    height: 270px;
+}
+#make-guess-btn {
+    text-decoration: none;
+    display: inline-block;
+    width: 430px;
+    height: 40px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 10px 10px;
+    font-size: 19px;
+    text-align: center;
+    padding: 0;
+    padding-top: 12px;
+    color: #c6c6c6;
+    background-color: gray;
+    border: none;
+    border-radius: 0;
+}
+
+#street-map {
+    width: 100%;
+    height: 100%;
+
+}
+#street-map text { display: none; }
+         
+#result-overlay {
+    visibility: hidden;
+    background-color: rgba(0,0,0,0.7);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 1001;
+}
+               
+#result-wrapper {
+    border: 1px solid grey;
+    background-color: #fff;
+    height: 600px;
+    width: 750px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 100;
+}
+
+#result-map {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 730px;
+    height: 480px;
+}
+
+#close-result-btn {
+    text-decoration: none;
+    display: inline-block;
+    width: 200px;
+    height: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 19px;
+    text-align: center;
+    padding-top: 7px;
+    color: #fff;
+    background-color: #0094ff;
+    border: none;
+    border-radius: 0;
+}
+#footer-wrapper {
+    overflow: hidden;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 400px;
+    height: 40px;
+    z-index: 10;
+}
+#footer {
+    position: absolute;
+    bottom: -34px;
+    width: 400px;
+    height: 40px;
+    background-color: black;
+    color: #f0f0f0;
+    font-family: 'Source Code Pro', sans-serif;
+    border-top: 5px solid white;
+    -webkit-transition: bottom 0.5s;
+    -moz-transition: bottom 0.5s;
+    transition: bottom 0.5s;
+        z-index: 10;
+
+}
+    #footer:hover {
+        bottom: 0px;
+    }
+    #footer p {
+        margin: 5px auto 5px 5px;
+        text-align: center;
+        text-shadow: 0 0 2px #c6c6c6;
+    }

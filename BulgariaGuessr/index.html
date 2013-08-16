@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" type="text/css" href="Styles/bgGuessr.css" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Source+Code+Pro" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta charset="utf-8" />
+    <title>Bulgaria Guesser</title>
+
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=geometry"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="street-map"></div>
+        <div id="wrapper-guessmap">
+            <div id="guessing-map"></div>
+            <a id="make-guess-btn" href="javascript:void(0)">Make guess</a>
+        </div>
+    </div>
+
+    <div id="result-overlay"> 
+        <div id="result-wrapper">
+            <div id="result-map"></div>
+            <div id="result-info">
+                <h2 id="result-text"></h2>
+            </div>
+            <a id="close-result-btn" href="javascript:void(0)">Close</a>
+      </div>
+    </div>
+
+    <div id="footer-wrapper">
+       <div id="footer">
+           <p>By Milen Aleksandrov</p>
+       </div>
+    </div>
+
+    <script src="Scripts/bgGuessr.js"></script>
+</body>
+</html>
