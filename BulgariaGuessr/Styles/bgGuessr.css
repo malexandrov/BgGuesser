@@ -105,7 +105,9 @@ body { height: 100%; text-align: center; background-color: black; }
     width: 730px;
     height: 480px;
 }
-
+    #result-info h2 {
+        font-size: 20px;
+    }
 #close-result-btn {
     text-decoration: none;
     display: inline-block;
@@ -144,7 +146,7 @@ body { height: 100%; text-align: center; background-color: black; }
     -webkit-transition: bottom 0.5s;
     -moz-transition: bottom 0.5s;
     transition: bottom 0.5s;
-        z-index: 10;
+    z-index: 10;
 
 }
     #footer:hover {
